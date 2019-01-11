@@ -1,6 +1,17 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'SirVer/ultisnips'
+call vundle#end() " required
+filetype plugin indent on " required
+
+" ultisnips options
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " colors
 syntax enable
 set t_Co=256

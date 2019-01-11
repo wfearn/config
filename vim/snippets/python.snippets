@@ -1,0 +1,17 @@
+#files
+snippet withr
+	with open(${1}, 'r') as f:
+		${0}
+
+snippet withw
+	with open(${1}, 'w') as f:
+		${0}
+
+# for loops
+snippet forn
+	for i, ${1} in enumerate(${2}):
+		${0}
+
+snippet forv
+	for k, v in ${1}.vals():
+		${0}
