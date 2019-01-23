@@ -11,6 +11,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.v
 
 ln -s $REPO_HOME/vim/.vimrc $HOME/.vimrc
 ln -s $REPO_HOME/vim/snippets/python.snippets $HOME/.vim/snippets/python.snippets
+ln -s $REPO_HOME/vim/snippets/bib.snippets $HOME/.vim/snippets/bib.snippets
 
 
 #tmux
