@@ -24,7 +24,7 @@ set expandtab
 set shiftwidth=4
 
 " ui
-set relativenumber
+set number relativenumber
 set showcmd
 set cursorline
 set lazyredraw
