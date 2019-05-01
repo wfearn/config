@@ -4,8 +4,13 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'SirVer/ultisnips'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end() " required
 filetype plugin indent on " required
+
+" ctrlp options
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 " ultisnips options
 let g:UltiSnipsExpandTrigger="<tab>"
