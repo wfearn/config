@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'SirVer/ultisnips'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end() " required
 filetype plugin indent on " required
 
@@ -53,10 +54,6 @@ set hlsearch
 nnoremap <C-F> <C-F>zz
 nnoremap <C-B> <C-B>zz
 nnoremap <silent> <Space> :silent let @/ = ""<CR>
-nnoremap <C-H> <C-W>h
-nnoremap <C-J> <C-W>j
-nnoremap <C-K> <C-W>k
-nnoremap <C-L> <C-W>l
 
 " disable keys
 noremap <Up> <Nop>
