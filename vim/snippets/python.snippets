@@ -7,6 +7,14 @@ snippet withw
 	with open(${1}, 'w') as f:
 		${0}
 
+snippet withrb
+	with open(${1}, 'rb') as f:
+		${0}
+
+snippet withwb
+	with open(${1}, 'wb') as f:
+		${0}
+
 # for loops
 snippet fore
 	for i, ${1} in enumerate(${2}):
@@ -14,6 +22,10 @@ snippet fore
 
 snippet fordi
 	for k, v in ${1}.items():
+		${0}
+
+snippet fordie
+	for i, (k, v) in enumerate(${1}.items()):
 		${0}
 
 # class template
