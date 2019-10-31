@@ -2,7 +2,10 @@
 
 REPO_HOME=$HOME/config
 
-#vim
+# terminal
+ln -s $REPO_HOME/.inputrc $HOME/.inputrc
+
+# vim
 mkdir -p $HOME/.vim/colors
 mkdir -p $HOME/.vim/snippets
 
@@ -15,6 +18,7 @@ ln -s $REPO_HOME/vim/snippets/bib.snippets $HOME/.vim/snippets/bib.snippets
 ln -s $REPO_HOME/vim/snippets/java.snippets $HOME/.vim/snippets/java.snippets
 ln -s $REPO_HOME/vim/snippets/html.snippets $HOME/.vim/snippets/html.snippets
 
+vim +PluginInstall +qa
 
-#tmux
+# tmux
 ln -s $REPO_HOME/tmux/.tmux.conf $HOME/.tmux.conf
