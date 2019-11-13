@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'SirVer/ultisnips'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'dracula/vim',{'name':'dracula'}
 call vundle#end() " required
 filetype plugin indent on " required
 
