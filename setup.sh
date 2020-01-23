@@ -2,6 +2,10 @@
 
 REPO_HOME=$HOME/config
 
+mkdir -p ~/.vim/snippets
+mkdir -p ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # terminal
 ln -s $REPO_HOME/.inputrc $HOME/.inputrc
 ln -s $REPO_HOME/vim/.vimrc $HOME/.vimrc
