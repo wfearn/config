@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'SirVer/ultisnips'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dracula/vim',{'name':'dracula'}
 call vundle#end() " required
 filetype plugin indent on " required
@@ -13,6 +14,11 @@ filetype plugin indent on " required
 " ctrlp options
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
+
+" YouCompleteMe options
+let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
 
 " ultisnips options
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -55,6 +61,10 @@ set hlsearch
 nnoremap <C-F> <C-F>zz
 nnoremap <C-B> <C-B>zz
 nnoremap <silent> <Space> :silent let @/ = ""<CR>
+
+" make split open to the right and down
+set splitbelow
+set splitright
 
 " disable keys
 noremap <Up> <Nop>
