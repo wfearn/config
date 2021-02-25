@@ -1,21 +1,29 @@
-#files
+# files
+snippet filefor
+	for line in f:
+		${0}
+
 snippet withr
-	with open(${1}, 'r') as f:
+	with open('${1}', 'r') as f:
 		${0}
 
 snippet withw
-	with open(${1}, 'w') as f:
+	with open('${1}', 'w') as f:
 		${0}
 
 snippet withrb
-	with open(${1}, 'rb') as f:
+	with open('${1}', 'rb') as f:
 		${0}
 
 snippet withwb
-	with open(${1}, 'wb') as f:
+	with open('${1}', 'wb') as f:
 		${0}
 
 # for loops
+snippet forfor
+	for ${1} in ${2}:
+		${0}
+
 snippet fore
 	for i, ${1} in enumerate(${2}):
 		${0}
