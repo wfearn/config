@@ -5,11 +5,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'SirVer/ultisnips'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'preservim/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dracula/vim',{'name':'dracula'}
 call vundle#end() " required
 filetype plugin indent on " required
+
+" nerdtree options
+nnoremap <Space><Space> :NERDTreeToggle<CR>
 
 " ctrlp options
 let g:ctrlp_map = '<c-p>'
