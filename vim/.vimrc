@@ -14,6 +14,7 @@ filetype plugin indent on " required
 
 " nerdtree options
 nnoremap <Space><Space> :NERDTreeToggle<CR>
+let g:NERDTreeQuitOnOpen = 1 " Makes NERDTree close when I open a file
 
 " ctrlp options
 let g:ctrlp_map = '<c-p>'
