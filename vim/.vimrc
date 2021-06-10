@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'SirVer/ultisnips'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'preservim/nerdtree'
+Plugin 'PProvost/vim-ps1'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dracula/vim',{'name':'dracula'}
