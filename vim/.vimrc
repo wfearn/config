@@ -79,3 +79,11 @@ noremap <Right> <Nop>
 
 nnoremap <Backspace> <Nop>
 inoremap <Backspace> <Nop>
+
+" Trigger `autoread` when files change on disk
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+    \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif
+
+" Notification after file change
+autocmd fileChangedShellPost *
+    \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
