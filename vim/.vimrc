@@ -1,16 +1,20 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'SirVer/ultisnips'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'preservim/nerdtree'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'ycm-core/YouCompleteMe'
-Plugin 'dracula/vim',{'name':'dracula'}
-call vundle#end() " required
-filetype plugin indent on " required
+" vim-plug boilerplate
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+      silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'SirVer/ultisnips'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'preservim/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'dracula/vim',{'name':'dracula'}
+call plug#end()
 
 " nerdtree options
 nnoremap <Space><Space> :NERDTreeToggle<CR>
