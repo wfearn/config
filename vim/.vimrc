@@ -9,6 +9,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'dracula/vim',{'name':'dracula'}
+Plugin 'iamcco/coc-tailwindcss'
 call vundle#end() " required
 filetype plugin indent on " required
 
