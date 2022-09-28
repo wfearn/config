@@ -8,12 +8,21 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+" snippets
 Plug 'SirVer/ultisnips'
+
+" file navigation
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
+
+" vim-tmux integration
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ycm-core/YouCompleteMe'
+
+" colorscheme
 Plug 'dracula/vim',{'name':'dracula'}
+
+"code completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " nerdtree options
@@ -61,6 +70,7 @@ set wildmenu
 set showmatch
 filetype indent on
 set list listchars=tab:»\ ,trail:•,nbsp:•
+set colorcolumn=79
 
 " search
 set incsearch
